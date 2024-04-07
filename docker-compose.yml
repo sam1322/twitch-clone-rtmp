@@ -7,7 +7,9 @@ services:
       - "8000:8000"
     extra_hosts:
     - "host.docker.internal:host-gateway"
+    # container_name: sam1322/twitch-clone-rtmp
     container_name: rtmp_server
+    image: sam1322/twitch-clone-rtmp
     volumes:
       - ./data:/tmp/hls
   # auth:
